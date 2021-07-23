@@ -9,7 +9,9 @@ import SwiftUI
 
 struct QuestionTop: View {
     @Environment(\.colorScheme) var colorScheme
+    @ObservedObject var keyboard = KeyboardResponder()
     @EnvironmentObject var settings: GlobalSettings
+    @State private var orientation = UIDevice.current.orientation
     
     var body: some View {
         VStack {
@@ -18,8 +20,9 @@ struct QuestionTop: View {
                     .font(.system(size: UIDevice.current.userInterfaceIdiom == .pad ? 128:108))
                 ZStack {
                     Image(systemName: "circle.fill")
-                        .foregroundColor(settings.selectedTheme.colorText != nil ? .white:Color(UIColor.systemBackground))
+                        .foregroundColor(.white)
                     Image(systemName: "\(settings.selectedOperator).circle.fill")
+                        .foregroundColor(.black)
                 }
                 .font(Font.system(size: UIDevice.current.userInterfaceIdiom == .pad ? 108:64))
                 .imageScale(.small)
@@ -28,9 +31,9 @@ struct QuestionTop: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .foregroundColor(settings.selectedTheme.colorText)
+            .offset(y: orientation.isLandscape ? -keyboard.currentHeight/2:0)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.accentColor)
     }
 }
 

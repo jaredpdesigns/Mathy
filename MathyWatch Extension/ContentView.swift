@@ -9,23 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var settings = GlobalSettings()
-    @State var isShowingSheet: Bool = false
     
     var body: some View {
         VStack(spacing: 0) {
             if settings.solved {
                 Answer()
             } else {
-                Question(isShowingSheet: $isShowingSheet)
+                Question()
             }
         }
         .environmentObject(settings)
         .ignoresSafeArea(edges: .top)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationBarHidden(true)
-        .sheet(isPresented: $isShowingSheet, onDismiss: { self.isShowingSheet = false }) {
+        .sheet(isPresented: $settings.isShowingSheet, onDismiss: { settings.isShowingSheet = false }) {
             VStack {
                 Settings().environmentObject(settings)
+            }
+        }
+        .onAppear {
+            if settings.answer == "" {
+                settings.getNumbers()
             }
         }
         .onChange(of: settings.selectedOperator) { _ in

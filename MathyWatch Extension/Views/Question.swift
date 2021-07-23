@@ -9,13 +9,11 @@ import SwiftUI
 
 struct Question: View {
     @EnvironmentObject var settings: GlobalSettings
-    @Binding var isShowingSheet: Bool
-    @FocusState private var isFocused: Bool
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HStack {
-                Button(action: { isShowingSheet.toggle() }) {
+                Button(action: { settings.isShowingSheet.toggle() }) {
                     VStack {
                         Image(systemName: "slider.horizontal.3")
                             .font(Font.caption.weight(.bold))
@@ -33,13 +31,13 @@ struct Question: View {
                 .buttonStyle(.plain)
                 Spacer()
             }
-            HStack(spacing: 0) {
+            HStack(spacing: 4) {
                 Text("\(settings.numberOne)")
                     .font(.largeTitle)
                 ZStack {
                     Image(systemName: "circle.fill")
-                        .foregroundColor(settings.selectedTheme.colorText)
                     Image(systemName: "\(settings.selectedOperator).circle.fill")
+                        .foregroundColor(.black)
                 }
                 .font(.title2)
                 .imageScale(.small)
@@ -53,7 +51,6 @@ struct Question: View {
                     .textFieldStyle(.plain)
                     .multilineTextAlignment(.center)
                     .font(.title2)
-                    .focused($isFocused)
                 if settings.answer != "" {
                     VStack {
                         Button(action: { settings.checkAnswer() }) {
@@ -72,16 +69,11 @@ struct Question: View {
             }.padding()
         }
         .ignoresSafeArea()
-        .onAppear {
-            if settings.answer.isEmpty {
-                settings.getNumbers()
-            }
-        }
     }
 }
 
 struct Question_Previews: PreviewProvider {
     static var previews: some View {
-        Question(isShowingSheet: .constant(false)).environmentObject(GlobalSettings())
+        Question().environmentObject(GlobalSettings())
     }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BE079F9226AA2D0F00227223 /* ConfettiSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BE81FD5C26AA17D80059E304 /* ConfettiSwiftUI */; };
 		BE079F9526AA305100227223 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE079F9426AA305100227223 /* Answer.swift */; };
+		BE1C746B26AB7B8C006B5872 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BE1C746A26AB7B8C006B5872 /* ConfettiSwiftUI */; };
+		BE1C746C26AB7B8C006B5872 /* ConfettiSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BE1C746A26AB7B8C006B5872 /* ConfettiSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BE28AD6E26964D2000F5A63E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28AD6D26964D2000F5A63E /* Settings.swift */; };
 		BE46BDBC26A37E9300D90969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE46BDBB26A37E9300D90969 /* Assets.xcassets */; };
 		BE46BDC226A37E9300D90969 /* MathyWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE46BDC126A37E9300D90969 /* MathyWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -26,6 +28,7 @@
 		BE705C8A2698FC12004DC891 /* AnswerTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE705C892698FC12004DC891 /* AnswerTop.swift */; };
 		BE705C8C2699003C004DC891 /* AnswerBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE705C8B2699003B004DC891 /* AnswerBottom.swift */; };
 		BE81FD5D26AA17D80059E304 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BE81FD5C26AA17D80059E304 /* ConfettiSwiftUI */; };
+		BE9518ED26AB6878006BBCD1 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9518EC26AB6878006BBCD1 /* KeyboardResponder.swift */; };
 		BE9D1A0A2695396F00FDEF20 /* MathyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D1A092695396F00FDEF20 /* MathyApp.swift */; };
 		BE9D1A0C2695396F00FDEF20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D1A0B2695396F00FDEF20 /* ContentView.swift */; };
 		BE9D1A0E2695397100FDEF20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9D1A0D2695397100FDEF20 /* Assets.xcassets */; };
@@ -62,6 +65,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BE079F9226AA2D0F00227223 /* ConfettiSwiftUI in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1C746D26AB7B8C006B5872 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE1C746C26AB7B8C006B5872 /* ConfettiSwiftUI in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +123,7 @@
 		BE705C892698FC12004DC891 /* AnswerTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTop.swift; sourceTree = "<group>"; };
 		BE705C8B2699003B004DC891 /* AnswerBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBottom.swift; sourceTree = "<group>"; };
 		BE705C8F26990316004DC891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BE9518EC26AB6878006BBCD1 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		BE9D1A062695396F00FDEF20 /* Mathy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mathy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9D1A092695396F00FDEF20 /* MathyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathyApp.swift; sourceTree = "<group>"; };
 		BE9D1A0B2695396F00FDEF20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1C746B26AB7B8C006B5872 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +156,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE1C746926AB7B8C006B5872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE46BDBA26A37E9200D90969 /* MathyWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +215,7 @@
 				BE46BDBA26A37E9200D90969 /* MathyWatch */,
 				BE46BDC526A37E9300D90969 /* MathyWatch Extension */,
 				BE9D1A072695396F00FDEF20 /* Products */,
+				BE1C746926AB7B8C006B5872 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +236,7 @@
 				BE9D1A092695396F00FDEF20 /* MathyApp.swift */,
 				BE9D1A0B2695396F00FDEF20 /* ContentView.swift */,
 				BE6AD10926966265007D730E /* Data.swift */,
+				BE9518EC26AB6878006BBCD1 /* KeyboardResponder.swift */,
 				BE705C8E26990114004DC891 /* Views */,
 				BEDE22F526A6250900D81272 /* Launch Screen.storyboard */,
 				BE9D1A0D2695397100FDEF20 /* Assets.xcassets */,
@@ -265,12 +290,16 @@
 				BE46BDBD26A37E9300D90969 /* Sources */,
 				BE46BDBE26A37E9300D90969 /* Frameworks */,
 				BE46BDBF26A37E9300D90969 /* Resources */,
+				BE1C746D26AB7B8C006B5872 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "MathyWatch Extension";
+			packageProductDependencies = (
+				BE1C746A26AB7B8C006B5872 /* ConfettiSwiftUI */,
+			);
 			productName = "TheseKidsMathWatch Extension";
 			productReference = BE46BDC126A37E9300D90969 /* MathyWatch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -395,6 +424,7 @@
 				BE28AD6E26964D2000F5A63E /* Settings.swift in Sources */,
 				BE705C862698F952004DC891 /* QuestionTop.swift in Sources */,
 				BE9D1A0C2695396F00FDEF20 /* ContentView.swift in Sources */,
+				BE9518ED26AB6878006BBCD1 /* KeyboardResponder.swift in Sources */,
 				BE079F9526AA305100227223 /* Answer.swift in Sources */,
 				BE705C8C2699003C004DC891 /* AnswerBottom.swift in Sources */,
 				BE705C882698FA8F004DC891 /* QuestionBottom.swift in Sources */,
@@ -794,6 +824,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BE1C746A26AB7B8C006B5872 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE81FD5B26AA17D80059E304 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
 		BE81FD5C26AA17D80059E304 /* ConfettiSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BE81FD5B26AA17D80059E304 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;

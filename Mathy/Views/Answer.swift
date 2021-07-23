@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct Answer: View {
+    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
     @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var settings: GlobalSettings
     @State private var orientation = UIDevice.current.orientation
@@ -47,13 +49,24 @@ struct Answer: View {
                 HStack(spacing: 0) {
                     AnswerTop(portrait: false)
                     AnswerBottom(portrait: false)
-                }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(.ultraThickMaterial)
+                VStack {
+                    Rectangle()
+                        .fill(.clear)
+                        .background(.ultraThinMaterial)
+                        .frame(height: verticalSizeClass == .compact ? 48:80)
+                        .frame(maxWidth: .infinity)
+                    Spacer()
+                }
             } else {
                 VStack(spacing: 0) {
                     AnswerTop()
                     AnswerBottom()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(.ultraThickMaterial)
             }
             VStack {
                 Spacer()
@@ -63,12 +76,14 @@ struct Answer: View {
             .padding(.bottom, 18)
         }
         .ignoresSafeArea()
+        .background(Color.accentColor)
         .onRotate { newOrientation in
             orientation = newOrientation
         }
     }
 }
 
+@available(iOS 15.0, *)
 struct Answer_Previews: PreviewProvider {
     static var previews: some View {
         Answer().environmentObject(GlobalSettings())

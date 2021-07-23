@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     @StateObject var settings = GlobalSettings()
@@ -61,6 +62,7 @@ struct ContentView: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

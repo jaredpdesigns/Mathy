@@ -6,19 +6,27 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
 
 struct Answer: View {
     @EnvironmentObject var settings: GlobalSettings
+    @State var confettiCount: Int = 0
     
     var body: some View {
         VStack {
             Spacer()
             VStack(spacing: 0) {
-                Image(settings.answerCorrect ? "Face Happy":"Face Sad")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 56, height: 56)
-                .foregroundColor(.white)
+                ZStack {
+                    Image(settings.answerCorrect ? "Face Happy":"Face Sad")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 56, height: 56)
+                        .foregroundColor(.white)
+                        .scaleEffect(settings.isAnimating ? 1.125:1, anchor: .center)
+                    if settings.answerCorrect {
+                        ConfettiCannon(counter: $confettiCount, colors: [.accentColor, Color(UIColor(hexString: "#FFC72C")!), Color(UIColor(hexString: "#EF3340")!)])
+                    }
+                }
                 Text(settings.answerCorrect ? "Great job!":"Oops…")
                     .font(.title2)
                     .fontWeight(.semibold)
@@ -49,16 +57,21 @@ struct Answer: View {
                     }
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(.black)
                     .clipShape(Capsule())
+                    .overlay(Capsule().stroke(Color.white, lineWidth: 1).opacity(0.25))
                 }
                 .buttonStyle(.plain)
             }.padding()
         }
-        .background(settings.answerCorrect ? Color(UIColor(hexString: "#00965E")!):Color(UIColor(hexString: "#EF3340")!))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()
-        
+        .onAppear {
+            if settings.answerCorrect {
+                confettiCount += 1
+            } else {
+                settings.animateStuff()
+            }
+        }
     }
 }
 

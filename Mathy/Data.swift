@@ -25,23 +25,13 @@ let operators: [Operator] = [
     Operator(name: "Multiply", image: "multiply")
 ]
 
-#if os(watchOS)
 let themes: [Theme] = [
     Theme(name: "🫐 Blueberry", colorBG: .accentColor),
     Theme(name: "🍌 Banana", colorBG: Color(UIColor(hexString: "#FFC72C")!)),
     Theme(name: "🐼 Panda", colorBG: .gray),
     Theme(name: "🎃 Halloween", colorBG: .orange),
-    Theme(name: "🦄 Unicorn", colorBG: Color(UIColor(hexString: "#ff808c")!), colorText: Color(UIColor(hexString: "#000052")!))
+    Theme(name: "🦄 Unicorn", colorBG: Color(UIColor(hexString: "#ff808c")!))
 ]
-#else
-let themes: [Theme] = [
-    Theme(name: "🫐 Blueberry", colorBG: .accentColor),
-    Theme(name: "🍌 Banana", colorBG: Color(UIColor(hexString: "#FFC72C")!)),
-    Theme(name: "🐼 Panda", colorBG: Color(UIColor.systemGray)),
-    Theme(name: "🎃 Halloween", colorBG: .orange),
-    Theme(name: "🦄 Unicorn", colorBG: Color(UIColor(hexString: "#ff808c")!), colorText: Color(UIColor(hexString: "#000052")!))
-]
-#endif
 
 // Shared Data
 

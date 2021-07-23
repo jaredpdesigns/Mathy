@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct Settings: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @EnvironmentObject var settings: GlobalSettings
@@ -82,12 +83,12 @@ struct Settings: View {
                         }
                     }
                 }
-            }
-            .listStyle(.plain)
+            }.listStyle(.plain)
         }
     }
 }
 
+@available(iOS 15.0, *)
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
         Settings().environmentObject(GlobalSettings())

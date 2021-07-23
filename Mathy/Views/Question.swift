@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct Question: View {
+    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
     @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var settings: GlobalSettings
     @State private var orientation = UIDevice.current.orientation
@@ -34,13 +36,17 @@ struct Question: View {
     var body: some View {
         ZStack {
             if orientation.isLandscape {
-                HStack(spacing: 0) {
-                    QuestionTop()
-                    QuestionBottom()
-                }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                    HStack(spacing: 0) {
+                        QuestionTop()
+                        QuestionBottom()
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.accentColor)
                 VStack {
-                    Color.black
-                        .frame(height: 48)
+                    Rectangle()
+                        .fill(.clear)
+                        .background(.ultraThinMaterial)
+                        .frame(height: verticalSizeClass == .compact ? 48:80)
                         .frame(maxWidth: .infinity)
                     Spacer()
                 }
@@ -50,6 +56,7 @@ struct Question: View {
                     QuestionBottom()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.accentColor)
             }
             if settings.answer != "" {
                 VStack {
@@ -73,6 +80,7 @@ struct Question: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct Question_Previews: PreviewProvider {
     static var previews: some View {
         Question().environmentObject(GlobalSettings())
