@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE079F9226AA2D0F00227223 /* ConfettiSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BE81FD5C26AA17D80059E304 /* ConfettiSwiftUI */; };
+		BE079F9526AA305100227223 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE079F9426AA305100227223 /* Answer.swift */; };
+		BE28AD6E26964D2000F5A63E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28AD6D26964D2000F5A63E /* Settings.swift */; };
+		BE46BDBC26A37E9300D90969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE46BDBB26A37E9300D90969 /* Assets.xcassets */; };
+		BE46BDC226A37E9300D90969 /* MathyWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE46BDC126A37E9300D90969 /* MathyWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE46BDC726A37E9300D90969 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46BDC626A37E9300D90969 /* ContentView.swift */; };
+		BE46BDC926A37E9300D90969 /* MathyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46BDC826A37E9300D90969 /* MathyApp.swift */; };
+		BE46BDCB26A37E9300D90969 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46BDCA26A37E9300D90969 /* ComplicationController.swift */; };
+		BE46BDCD26A37E9400D90969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE46BDCC26A37E9400D90969 /* Assets.xcassets */; };
+		BE46BDD026A37E9400D90969 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE46BDCF26A37E9400D90969 /* Preview Assets.xcassets */; };
+		BE46BDD426A37E9400D90969 /* MathyWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BE46BDB926A37E9200D90969 /* MathyWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE46BDDE26A3824D00D90969 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6AD10926966265007D730E /* Data.swift */; };
+		BE46BDE026A38F5500D90969 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46BDDF26A38F5500D90969 /* Question.swift */; };
+		BE6AD10A26966265007D730E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6AD10926966265007D730E /* Data.swift */; };
+		BE705C862698F952004DC891 /* QuestionTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE705C852698F952004DC891 /* QuestionTop.swift */; };
+		BE705C882698FA8F004DC891 /* QuestionBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE705C872698FA8F004DC891 /* QuestionBottom.swift */; };
+		BE705C8A2698FC12004DC891 /* AnswerTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE705C892698FC12004DC891 /* AnswerTop.swift */; };
+		BE705C8C2699003C004DC891 /* AnswerBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE705C8B2699003B004DC891 /* AnswerBottom.swift */; };
+		BE81FD5D26AA17D80059E304 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BE81FD5C26AA17D80059E304 /* ConfettiSwiftUI */; };
+		BE9D1A0A2695396F00FDEF20 /* MathyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D1A092695396F00FDEF20 /* MathyApp.swift */; };
+		BE9D1A0C2695396F00FDEF20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D1A0B2695396F00FDEF20 /* ContentView.swift */; };
+		BE9D1A0E2695397100FDEF20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9D1A0D2695397100FDEF20 /* Assets.xcassets */; };
+		BE9D1A112695397100FDEF20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9D1A102695397100FDEF20 /* Preview Assets.xcassets */; };
+		BEAEFCD926AA1AAB003CBAAB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEFCD826AA1AAA003CBAAB /* Question.swift */; };
+		BEDE22F626A6250900D81272 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDE22F526A6250900D81272 /* Launch Screen.storyboard */; };
+		BEEF1ED826A3946100A057F3 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF1ED726A3946100A057F3 /* Answer.swift */; };
+		BEEF1EDB26A39C4E00A057F3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF1EDA26A39C4E00A057F3 /* Settings.swift */; };
+		BEEF1EDC26A3A25C00A057F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9D1A0D2695397100FDEF20 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE46BDC326A37E9300D90969 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE9D19FE2695396F00FDEF20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE46BDC026A37E9300D90969;
+			remoteInfo = "TheseKidsMathWatch Extension";
+		};
+		BE46BDD226A37E9400D90969 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE9D19FE2695396F00FDEF20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE46BDB826A37E9200D90969;
+			remoteInfo = TheseKidsMathWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE079F9326AA2D0F00227223 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE079F9226AA2D0F00227223 /* ConfettiSwiftUI in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE46BDD526A37E9400D90969 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BE46BDD426A37E9400D90969 /* MathyWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE46BDD826A37E9400D90969 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE46BDC226A37E9300D90969 /* MathyWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE079F9426AA305100227223 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		BE28AD6D26964D2000F5A63E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BE46BDB926A37E9200D90969 /* MathyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE46BDBB26A37E9300D90969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE46BDC126A37E9300D90969 /* MathyWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MathyWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE46BDC626A37E9300D90969 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE46BDC826A37E9300D90969 /* MathyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathyApp.swift; sourceTree = "<group>"; };
+		BE46BDCA26A37E9300D90969 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BE46BDCC26A37E9400D90969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE46BDCF26A37E9400D90969 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE46BDD126A37E9400D90969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE46BDDF26A38F5500D90969 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		BE6AD10926966265007D730E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		BE705C852698F952004DC891 /* QuestionTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTop.swift; sourceTree = "<group>"; };
+		BE705C872698FA8F004DC891 /* QuestionBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBottom.swift; sourceTree = "<group>"; };
+		BE705C892698FC12004DC891 /* AnswerTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTop.swift; sourceTree = "<group>"; };
+		BE705C8B2699003B004DC891 /* AnswerBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBottom.swift; sourceTree = "<group>"; };
+		BE705C8F26990316004DC891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BE9D1A062695396F00FDEF20 /* Mathy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mathy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9D1A092695396F00FDEF20 /* MathyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathyApp.swift; sourceTree = "<group>"; };
+		BE9D1A0B2695396F00FDEF20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE9D1A0D2695397100FDEF20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE9D1A102695397100FDEF20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEAEFCD826AA1AAA003CBAAB /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		BEDE22F526A6250900D81272 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		BEEF1ED726A3946100A057F3 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		BEEF1ED926A396D300A057F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BEEF1EDA26A39C4E00A057F3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE46BDBE26A37E9300D90969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9D1A032695396F00FDEF20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE81FD5D26AA17D80059E304 /* ConfettiSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE46BDBA26A37E9200D90969 /* MathyWatch */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF1ED926A396D300A057F3 /* Info.plist */,
+				BE46BDBB26A37E9300D90969 /* Assets.xcassets */,
+			);
+			path = MathyWatch;
+			sourceTree = "<group>";
+		};
+		BE46BDC526A37E9300D90969 /* MathyWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BE46BDC626A37E9300D90969 /* ContentView.swift */,
+				BEEF1ED626A3944E00A057F3 /* Views */,
+				BE46BDC826A37E9300D90969 /* MathyApp.swift */,
+				BE46BDCA26A37E9300D90969 /* ComplicationController.swift */,
+				BE46BDCC26A37E9400D90969 /* Assets.xcassets */,
+				BE46BDD126A37E9400D90969 /* Info.plist */,
+				BE46BDCE26A37E9400D90969 /* Preview Content */,
+			);
+			path = "MathyWatch Extension";
+			sourceTree = "<group>";
+		};
+		BE46BDCE26A37E9400D90969 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE46BDCF26A37E9400D90969 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE705C8E26990114004DC891 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEAEFCD826AA1AAA003CBAAB /* Question.swift */,
+				BE705C852698F952004DC891 /* QuestionTop.swift */,
+				BE705C872698FA8F004DC891 /* QuestionBottom.swift */,
+				BE079F9426AA305100227223 /* Answer.swift */,
+				BE705C892698FC12004DC891 /* AnswerTop.swift */,
+				BE705C8B2699003B004DC891 /* AnswerBottom.swift */,
+				BE28AD6D26964D2000F5A63E /* Settings.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE9D19FD2695396F00FDEF20 = {
+			isa = PBXGroup;
+			children = (
+				BE9D1A082695396F00FDEF20 /* Mathy */,
+				BE46BDBA26A37E9200D90969 /* MathyWatch */,
+				BE46BDC526A37E9300D90969 /* MathyWatch Extension */,
+				BE9D1A072695396F00FDEF20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE9D1A072695396F00FDEF20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE9D1A062695396F00FDEF20 /* Mathy.app */,
+				BE46BDB926A37E9200D90969 /* MathyWatch.app */,
+				BE46BDC126A37E9300D90969 /* MathyWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE9D1A082695396F00FDEF20 /* Mathy */ = {
+			isa = PBXGroup;
+			children = (
+				BE705C8F26990316004DC891 /* Info.plist */,
+				BE9D1A092695396F00FDEF20 /* MathyApp.swift */,
+				BE9D1A0B2695396F00FDEF20 /* ContentView.swift */,
+				BE6AD10926966265007D730E /* Data.swift */,
+				BE705C8E26990114004DC891 /* Views */,
+				BEDE22F526A6250900D81272 /* Launch Screen.storyboard */,
+				BE9D1A0D2695397100FDEF20 /* Assets.xcassets */,
+				BE9D1A0F2695397100FDEF20 /* Preview Content */,
+			);
+			path = Mathy;
+			sourceTree = "<group>";
+		};
+		BE9D1A0F2695397100FDEF20 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE9D1A102695397100FDEF20 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEEF1ED626A3944E00A057F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE46BDDF26A38F5500D90969 /* Question.swift */,
+				BEEF1ED726A3946100A057F3 /* Answer.swift */,
+				BEEF1EDA26A39C4E00A057F3 /* Settings.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE46BDB826A37E9200D90969 /* MathyWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE46BDDC26A37E9400D90969 /* Build configuration list for PBXNativeTarget "MathyWatch" */;
+			buildPhases = (
+				BE46BDB726A37E9200D90969 /* Resources */,
+				BE46BDD826A37E9400D90969 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE46BDC426A37E9300D90969 /* PBXTargetDependency */,
+			);
+			name = MathyWatch;
+			productName = TheseKidsMathWatch;
+			productReference = BE46BDB926A37E9200D90969 /* MathyWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BE46BDC026A37E9300D90969 /* MathyWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE46BDDB26A37E9400D90969 /* Build configuration list for PBXNativeTarget "MathyWatch Extension" */;
+			buildPhases = (
+				BE46BDBD26A37E9300D90969 /* Sources */,
+				BE46BDBE26A37E9300D90969 /* Frameworks */,
+				BE46BDBF26A37E9300D90969 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MathyWatch Extension";
+			productName = "TheseKidsMathWatch Extension";
+			productReference = BE46BDC126A37E9300D90969 /* MathyWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		BE9D1A052695396F00FDEF20 /* Mathy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9D1A142695397100FDEF20 /* Build configuration list for PBXNativeTarget "Mathy" */;
+			buildPhases = (
+				BE9D1A022695396F00FDEF20 /* Sources */,
+				BE9D1A032695396F00FDEF20 /* Frameworks */,
+				BE9D1A042695396F00FDEF20 /* Resources */,
+				BE46BDD526A37E9400D90969 /* Embed Watch Content */,
+				BE079F9326AA2D0F00227223 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE46BDD326A37E9400D90969 /* PBXTargetDependency */,
+			);
+			name = Mathy;
+			packageProductDependencies = (
+				BE81FD5C26AA17D80059E304 /* ConfettiSwiftUI */,
+			);
+			productName = TheseKidsMath;
+			productReference = BE9D1A062695396F00FDEF20 /* Mathy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE9D19FE2695396F00FDEF20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					BE46BDB826A37E9200D90969 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BE46BDC026A37E9300D90969 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BE9D1A052695396F00FDEF20 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = BE9D1A012695396F00FDEF20 /* Build configuration list for PBXProject "Mathy" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE9D19FD2695396F00FDEF20;
+			packageReferences = (
+				BE81FD5B26AA17D80059E304 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
+			productRefGroup = BE9D1A072695396F00FDEF20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE9D1A052695396F00FDEF20 /* Mathy */,
+				BE46BDB826A37E9200D90969 /* MathyWatch */,
+				BE46BDC026A37E9300D90969 /* MathyWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE46BDB726A37E9200D90969 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE46BDBC26A37E9300D90969 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE46BDBF26A37E9300D90969 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE46BDD026A37E9400D90969 /* Preview Assets.xcassets in Resources */,
+				BEEF1EDC26A3A25C00A057F3 /* Assets.xcassets in Resources */,
+				BE46BDCD26A37E9400D90969 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9D1A042695396F00FDEF20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDE22F626A6250900D81272 /* Launch Screen.storyboard in Resources */,
+				BE9D1A112695397100FDEF20 /* Preview Assets.xcassets in Resources */,
+				BE9D1A0E2695397100FDEF20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE46BDBD26A37E9300D90969 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE46BDC926A37E9300D90969 /* MathyApp.swift in Sources */,
+				BE46BDC726A37E9300D90969 /* ContentView.swift in Sources */,
+				BE46BDCB26A37E9300D90969 /* ComplicationController.swift in Sources */,
+				BE46BDE026A38F5500D90969 /* Question.swift in Sources */,
+				BEEF1EDB26A39C4E00A057F3 /* Settings.swift in Sources */,
+				BE46BDDE26A3824D00D90969 /* Data.swift in Sources */,
+				BEEF1ED826A3946100A057F3 /* Answer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9D1A022695396F00FDEF20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE28AD6E26964D2000F5A63E /* Settings.swift in Sources */,
+				BE705C862698F952004DC891 /* QuestionTop.swift in Sources */,
+				BE9D1A0C2695396F00FDEF20 /* ContentView.swift in Sources */,
+				BE079F9526AA305100227223 /* Answer.swift in Sources */,
+				BE705C8C2699003C004DC891 /* AnswerBottom.swift in Sources */,
+				BE705C882698FA8F004DC891 /* QuestionBottom.swift in Sources */,
+				BE9D1A0A2695396F00FDEF20 /* MathyApp.swift in Sources */,
+				BE6AD10A26966265007D730E /* Data.swift in Sources */,
+				BEAEFCD926AA1AAB003CBAAB /* Question.swift in Sources */,
+				BE705C8A2698FC12004DC891 /* AnswerTop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE46BDC426A37E9300D90969 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE46BDC026A37E9300D90969 /* MathyWatch Extension */;
+			targetProxy = BE46BDC326A37E9300D90969 /* PBXContainerItemProxy */;
+		};
+		BE46BDD326A37E9400D90969 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE46BDB826A37E9200D90969 /* MathyWatch */;
+			targetProxy = BE46BDD226A37E9400D90969 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE46BDD626A37E9400D90969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = MathyWatch_Extension;
+				INFOPLIST_FILE = MathyWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mathy;
+				INFOPLIST_KEY_CFBundleExecutable = MathyWatch;
+				INFOPLIST_KEY_CFBundleName = MathyWatch;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.jaredpdesigns.Mathy;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredpdesigns.Mathy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		BE46BDD726A37E9400D90969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = MathyWatch_Extension;
+				INFOPLIST_FILE = MathyWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mathy;
+				INFOPLIST_KEY_CFBundleExecutable = MathyWatch;
+				INFOPLIST_KEY_CFBundleName = MathyWatch;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.jaredpdesigns.Mathy;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredpdesigns.Mathy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		BE46BDD926A37E9400D90969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MathyWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MathyWatch Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mathy;
+				INFOPLIST_KEY_CFBundleExecutable = "MathyWatch Extension";
+				INFOPLIST_KEY_CFBundleName = "MathyWatch Extension";
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = MathyWatch_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredpdesigns.Mathy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		BE46BDDA26A37E9400D90969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MathyWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MathyWatch Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Mathy;
+				INFOPLIST_KEY_CFBundleExecutable = "MathyWatch Extension";
+				INFOPLIST_KEY_CFBundleName = "MathyWatch Extension";
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = MathyWatch_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredpdesigns.Mathy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		BE9D1A122695397100FDEF20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE9D1A132695397100FDEF20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE9D1A152695397100FDEF20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mathy/Preview Content\"";
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mathy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mathy;
+				INFOPLIST_KEY_CFBundleExecutable = Mathy;
+				INFOPLIST_KEY_CFBundleName = Mathy;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredpdesigns.Mathy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE9D1A162695397100FDEF20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mathy/Preview Content\"";
+				DEVELOPMENT_TEAM = 2U6Q2LWV8X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mathy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mathy;
+				INFOPLIST_KEY_CFBundleExecutable = Mathy;
+				INFOPLIST_KEY_CFBundleName = Mathy;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredpdesigns.Mathy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE46BDDB26A37E9400D90969 /* Build configuration list for PBXNativeTarget "MathyWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE46BDD926A37E9400D90969 /* Debug */,
+				BE46BDDA26A37E9400D90969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE46BDDC26A37E9400D90969 /* Build configuration list for PBXNativeTarget "MathyWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE46BDD626A37E9400D90969 /* Debug */,
+				BE46BDD726A37E9400D90969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9D1A012695396F00FDEF20 /* Build configuration list for PBXProject "Mathy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9D1A122695397100FDEF20 /* Debug */,
+				BE9D1A132695397100FDEF20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9D1A142695397100FDEF20 /* Build configuration list for PBXNativeTarget "Mathy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9D1A152695397100FDEF20 /* Debug */,
+				BE9D1A162695397100FDEF20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE81FD5B26AA17D80059E304 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE81FD5C26AA17D80059E304 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE81FD5B26AA17D80059E304 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BE9D19FE2695396F00FDEF20 /* Project object */;
+}
